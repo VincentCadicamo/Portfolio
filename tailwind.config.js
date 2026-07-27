@@ -13,7 +13,8 @@ export default {
         cyan: '#38bdf8',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Minecraft', 'Inter', 'system-ui', 'sans-serif'],
+        sans: ['Minecraft', 'Inter', 'system-ui', 'sans-serif'],
         mono: ["'JetBrains Mono'", 'ui-monospace', 'monospace'],
       },
     },

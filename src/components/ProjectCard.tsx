@@ -11,7 +11,7 @@ export default function ProjectCard({ project }: { project: Project }) {
     >
       <div className="flex items-start justify-between gap-3">
         <div>
-          <h3 className="font-semibold text-soft transition group-hover:text-accent">
+          <h3 className="font-display font-normal text-soft transition group-hover:text-accent">
             {project.title}
           </h3>
           <p className="mt-1 font-mono text-xs text-cyan">{project.context}</p>

@@ -51,7 +51,7 @@ export default function ProjectShowcase({ activeIndex,
                 <p className="mb-3 font-mono text-xs text-muted">
                     // {activeIndex + 1}/{projects.length}
                 </p>
-                <h3 className="text-lg font-semibold text-soft">{project.title}</h3>
+                <h3 className="font-display text-lg font-normal text-soft">{project.title}</h3>
                 <p className="mt-1 font-mono text-xs text-cyan">{project.context}</p>
                 <div className="relative">
                     <p className={`mt-3 text-sm leading-relaxed text-muted ${expanded ? '' : 'line-clamp-2'}`}>

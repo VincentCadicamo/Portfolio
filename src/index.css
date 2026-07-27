@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Self-hosted display face. Sources live in src/assets/fonts/*.otf;
+   these woff2 builds are served straight out of public/fonts/. */
+@font-face {
+  font-family: 'Minecraft';
+  src: url('/fonts/minecraft-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url('/fonts/minecraft-400-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url('/fonts/minecraft-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url('/fonts/minecraft-700-italic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root { color-scheme: dark; }
 
 /* The static lattice now comes from <CursorGrid gridOpacity> in App.tsx. */

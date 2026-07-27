@@ -34,7 +34,7 @@ export default function Home() {
     return (
     <section className="py-8">
       <p className="mb-4 font-mono text-sm text-cyan">$ whoami</p>
-      <h1 className="text-4xl font-normal tracking-tight text-soft sm:text-6xl">
+      <h1 className="font-display text-4xl font-normal tracking-tight text-soft sm:text-6xl">
           <TypeWriter
               options={{ cursor: "_" }}
               onInit={(typewriter) => {
