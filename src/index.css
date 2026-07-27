@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+body {
+  @apply bg-base text-soft font-sans antialiased;
+  background-image:
+    linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+::selection { background: rgba(74, 222, 128, 0.25); }
+
+@keyframes borderDash {
+  to { stroke-dashoffset: -100; }
+}
