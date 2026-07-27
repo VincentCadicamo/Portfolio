@@ -8,7 +8,11 @@ type NavItem = { label: string; to?: string; href?: string }
 const NAV_ITEMS: NavItem[] = [
   { label: 'home', to: '/' },
   { label: 'projects', to: '/projects' },
+  // resume is a static file in public/, not a route — it has to go through
+  // `href` so the browser fetches it instead of React Router matching it.
+  { label: 'resume', href: profile.links.resume },
   { label: 'github', href: profile.links.github },
+  { label: 'linkedin', href: profile.links.linkedin },
 ]
 
 export default function Navbar() {

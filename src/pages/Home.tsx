@@ -53,6 +53,12 @@ export default function Home() {
         >
           view projects →
         </Link>
+        <a
+          href={profile.links.resume}
+          className="rounded border border-line px-4 py-2 font-mono text-sm text-muted transition hover:border-cyan hover:text-cyan"
+        >
+          résumé
+        </a>
       </div>
 
         <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:items-start">

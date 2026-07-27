@@ -9,7 +9,7 @@ export const profile = {
     github: 'https://github.com/VincentCadicamo',
     linkedin: 'https://linkedin.com/in/vincent-cadicamo',
     email: 'mailto:vcadicamo@icloud.com',
-    //resume: '/resume.pdf',
+    resume: '/resume.pdf',
   },
   languages: ['C++', 'C','Java', 'Python', 'TypeScript', 'JavaScript'],
   skills: ['Embedded Systems', 'STM32', 'Control Systems', 'ROS2', 'Linux', 'CMake', 'CI/CD', 'React', 'MATLAB'],
