@@ -34,7 +34,7 @@ export const projects: Project[] = [
     description:
       'A modular ROS2 teleoperation node that captures joystick input, translates it into motion commands, and publishes them to drive the rover over ROS2.',
     tags: ['ROS2', 'Python', 'C++', 'Robotics'],
-    link: '#',
+    link: 'https://github.com/RoboticsClubatUCF/Project-STORM',
     skills: ['Python', 'C++', 'ROS2'],
   },
   {
