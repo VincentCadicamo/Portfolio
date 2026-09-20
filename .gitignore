@@ -1,6 +1,10 @@
 node_modules
-dist
 dist-ssr
 .DS_Store
 *.local
 .idea
+out/
+resume/out/
+
+# dist/ is intentionally tracked: Cloudflare serves the prerendered output
+# directly, since its build image cannot run puppeteer's Chromium.
