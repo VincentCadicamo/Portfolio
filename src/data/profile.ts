@@ -8,7 +8,7 @@ export const profile = {
   links: {
     github: 'https://github.com/VincentCadicamo',
     linkedin: 'https://linkedin.com/in/vincent-cadicamo',
-    email: 'mailto:vcadicamo@icloud.com',
+    email: 'mailto:me@vincentcadicamo.dev',
     resume: '/resume.pdf',
   },
   languages: ['C++', 'C','Java', 'Python', 'TypeScript', 'JavaScript'],
