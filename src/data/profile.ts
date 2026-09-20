@@ -4,7 +4,7 @@ export const profile = {
   tagline: 'Real-Time Systems · Control Systems · Mobile App Dev',
   status: '',
   blurb:
-    "Hello, I am a CS student at UCF with a minor in Intelligent Robotics Systems, and currently the Technical Lead of our University Rover Challenge team. I am very passionate about anything robotics related and enjoy developing a variety of different systems, whether it’s firmware and closed-loop motor control up through high-level software and simulation!",
+    "Hello, I am a CS student at UCF pursuing a minor in Intelligent Robotic Systems, and currently the Technical Lead of our University Rover Challenge team. I’m very passionate about all things robotics and enjoy developing a variety of systems. Lately, my focus has been on firmware, closed-loop motor control, high-level software, and simulation!",
   links: {
     github: 'https://github.com/VincentCadicamo',
     linkedin: 'https://linkedin.com/in/vincent-cadicamo',
