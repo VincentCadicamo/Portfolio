@@ -4,7 +4,8 @@ export type Project = {
   description: string
   tags: string[]
   award?: boolean
-  link: string
+  // Leave out when the source isn't public — the card renders without a link
+  link?: string
   skills: string[]
 }
 
@@ -42,7 +43,7 @@ export const projects: Project[] = [
     description:
       'Carrick Marine is a cross platform React Native app that shipped to the Apple App store and the Google play store. I built the main feature of the app including, background-GPS anchor-drift alarm which runs even while the app is killed with a lock screen audio player. I also owned the CI/CD release pipelines through multiple production releases.',
     tags: ['React Native', 'Expo', 'TypeScript', 'CI/CD', 'Azure DevOps'],
-    link: '#',
+    // Repo is under NDA
     skills: ['React', 'TypeScript', 'CI/CD']
   },
 ]

@@ -2,13 +2,11 @@ import TechTag from './TechTag'
 import type { Project } from '../data/projects'
 
 export default function ProjectCard({ project }: { project: Project }) {
-  return (
-    <a
-      href={project.link}
-      target="_blank"
-      rel="noreferrer"
-      className="group block rounded-lg border border-line bg-surface/60 p-5 transition hover:border-accent/60 hover:bg-surface"
-    >
+  // Some projects are under NDA, so there is nothing to link to
+  const hasLink = Boolean(project.link) && project.link !== '#'
+
+  const content = (
+    <>
       <div className="flex items-start justify-between gap-3">
         <div>
           <h3 className="font-display font-normal text-soft transition group-hover:text-accent">
@@ -28,6 +26,23 @@ export default function ProjectCard({ project }: { project: Project }) {
           <TechTag key={t} label={t} />
         ))}
       </div>
+    </>
+  )
+
+  if (!hasLink) {
+    return (
+      <div className="block rounded-lg border border-line bg-surface/60 p-5">{content}</div>
+    )
+  }
+
+  return (
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noreferrer"
+      className="group block rounded-lg border border-line bg-surface/60 p-5 transition hover:border-accent/60 hover:bg-surface"
+    >
+      {content}
     </a>
   )
 }
