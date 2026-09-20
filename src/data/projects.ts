@@ -43,7 +43,7 @@ export const projects: Project[] = [
     description:
       'Carrick Marine is a cross platform React Native app that shipped to the Apple App store and the Google play store. I built the main feature of the app including, background-GPS anchor-drift alarm which runs even while the app is killed with a lock screen audio player. I also owned the CI/CD release pipelines through multiple production releases.',
     tags: ['React Native', 'Expo', 'TypeScript', 'CI/CD', 'Azure DevOps'],
-    // Repo is under NDA
+    // Repo is under NDA no link
     skills: ['React', 'TypeScript', 'CI/CD']
   },
 ]

@@ -4,6 +4,7 @@ import TypeWriter from "typewriter-effect"
 import { useState } from 'react'
 import { projects } from '../data/projects'
 import ProjectShowcase from "../components/ProjectShowcase.tsx";
+import { useSeo } from '../lib/seo'
 
 function SkillList({ label, items, activeSkills }: { label: string; items: string[]; activeSkills: Set<string> }) {
   return (
@@ -28,6 +29,13 @@ function SkillList({ label, items, activeSkills }: { label: string; items: strin
 }
 
 export default function Home() {
+    useSeo({
+        title: 'Vincent · Software & Robotics Engineer',
+        description: 'Vincent Cadicamo is a software engineer and CS student at UCF working on robotics, embedded systems, and mobile/web development.',
+        ogDescription: 'Software engineer and CS student at UCF doing robotics, embedded systems, and full-stack development.',
+        path: '/',
+    })
+
     const [activeIndex, setActiveIndex] = useState(0)
     const activeSkills = new Set(projects[activeIndex].skills)
 
